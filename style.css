@@ -21,7 +21,7 @@
 
 .navsvg svg {
     width: 108px;
-    height: 32px;
+    height: 44px;
 }
 
 .navsvg svg {
@@ -30,18 +30,21 @@
 }
 
 .navanchors ul {
-    width: 500px;
+    width: 573px;
+    height: 44px;
     display: flex;
     align-items: center;
-    justify-content: space-around;
     list-style: none;
+    margin: 0 32px;
 }
 
 .navanchors a {
     font-size: 12px;
-    font-family: poppins;
+    font-family: inter;
     color: #959699;
     text-decoration: none;
+    font-weight: 800;
+    padding: 0 20px;
 }
 
 .navbutton {
