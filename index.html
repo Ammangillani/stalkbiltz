@@ -7,6 +7,8 @@
     <title>StalkBiltz</title>
     <link rel="stylesheet" href="style.css">
     <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
 </head>
 
@@ -67,10 +69,28 @@
         <div class="hero">
             <div class="hero-btn">
                 <span id="assh">Announcing StalkBiltz Self hoisted</span>
-                <span id="learnmore">Learn More</span>
+                <span id="learnmore">Learn More <i class="fa-solid fa-angle-right"
+                        style="color: #ECECEC ;font-size: 10px;margin-top: 1px;"></i></span>
+            </div>
+            <div class="herowrapper">
+                <h1>Click.</h1>
+                <h1 class="auto-type"></h1>
+                <strong>Done.</strong>
             </div>
         </div>
     </div>
+
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed(".auto-type", {
+            strings: ["Code", "Learn New Framework", "Teach New Framework", "Collaborate", "Run live", "Create Bug Report", "Review Bug Report", "Get Feedback"],
+            typeSpeed: false,
+            backSpeed: false,
+            loop: true,
+            showCursor: false
+        })
+    </script>
 </body>
 
 </html>
