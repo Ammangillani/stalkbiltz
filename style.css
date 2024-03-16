@@ -8,10 +8,11 @@
     width: 100vw;
     height: 100vh;
     background-color: #1C1F25;
+    overflow-x: hidden;
 }
 
 .navbar {
-    /* position: fixed; */
+    position: sticky;
     width: 100%;
     height: 72px;
     display: flex;
@@ -37,6 +38,10 @@
     align-items: center;
     list-style: none;
     margin: 0 32px;
+}
+
+.navanchors a:hover {
+    color: #fff;
 }
 
 .navanchors a {
@@ -71,28 +76,28 @@
 
 .hero {
     width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: start;
     justify-content: space-around;
-    padding: 10px 2rem;
+    padding: 10px 3.5rem;
 
 }
 
 .hero-btn {
     width: max-content;
     display: flex;
-
+    cursor: pointer;
 }
 
-.hero-btn #assh {
-    padding: 10px 20px;
-    background: linear-gradient(#441C7B, #812E9F);
-    /* border: 1px solid #0d0e11; */
-    border-radius: 35px;
 
-    box-shadow: inset 0 0 6px 1px #8500ae,
-        inset 0 0 0 1px rgb(255, 255, 255);
+.hero-btn #assh {
+    padding: 12px 20px;
+    background: linear-gradient(#441C7B, #812E9F);
+    border-radius: 35px;
+    box-shadow: inset 0 0 6px 3px #441C7B,
+        inset 0 0 0 1px rgba(255, 255, 255, 0.658);
     font-size: 14px;
     font-family: inter;
     color: #fff;
@@ -102,9 +107,11 @@
 
 
 .hero-btn #learnmore {
+    width: 140px;
     display: flex;
     align-items: center;
-    padding: 10px 20px;
+    justify-content: space-evenly;
+    padding: 12px 20px;
     background-color: #16191E;
     border-radius: 0 35px 35px 0;
     box-shadow: inset 0 0 6px 1px #131519,
@@ -113,11 +120,11 @@
     font-size: 14px;
     font-family: inter;
     color: #ECECEC;
-    gap: 8px;
 }
 
-.herowrapper {
-    padding: 2rem 0;
+.hero-btn #learnmore:hover {
+    justify-content: space-around;
+    background-color: #0c0e10;
 }
 
 .herowrapper h1 {
@@ -139,4 +146,12 @@
     font-weight: 800;
     font-family: sans-serif;
     color: #69F5FF;
+}
+
+.herooutline p {
+    font-size: 18px;
+    color: #ffffffcc;
+    font-family: inter;
+    line-height: 1.8;
+    text-transform: capitalize;
 }
