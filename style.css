@@ -236,11 +236,26 @@
     font-family: Inter;
     color: #9e9e9e;
     font-weight: 800;
+    cursor: pointer;
 }
 
 #active {
     padding-block: 10px;
     border-bottom: 2px solid #69F5FF;
+}
+
+.wrapper-navigation li:hover {
+    padding-block: 10px;
+    border-bottom: 2px solid #69F5FF;
+}
+
+.wrapper-btn {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 0 8rem;
 }
 
 .btn-container {
@@ -251,10 +266,29 @@
     align-items: center;
     background-color: #22252B;
     gap: 4px;
+    cursor: pointer;
+}
+
+.btn-container:hover {
+    border: 2px solid #69F5FF;
+    background-color: #1C1F25;
 }
 
 .btn-svg svg {
     width: 28px;
     height: 28px;
+}
 
+.btn-content p {
+    color: #CACBCD;
+    font-size: 14px;
+    font-family: inter;
+    font-weight: 600;
+}
+
+.btn-content span {
+    color: #959699;
+    font-size: 11.9px;
+    font-family: inter;
+    font-weight: 600;
 }
