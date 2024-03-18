@@ -316,10 +316,9 @@
     width: 100%;
     background: rgb(41, 27, 48);
     background: linear-gradient(90deg, rgba(41, 27, 48, 1) 27%, rgba(35, 31, 49, 1) 53%, rgba(24, 40, 50, 1) 85%);
-    /* background: linear-gradient(90deg, rgba(41, 27, 48, 1) 28%, rgba(24, 40, 50, 1) 77%); */
-    height: 400px;
+    height: 500px;
     position: relative;
-    padding: 1rem;
+    padding: 2rem;
 }
 
 .fang-wrapper::before {
@@ -386,4 +385,83 @@
 .fang-icons img {
     width: 106px;
     height: 36px;
+}
+
+.assist-container {
+    width: 100%;
+    height: 100%;
+    background: #F1F4F8;
+    padding: 2rem 3rem;
+}
+
+.assist-header {
+    width: 100%;
+    height: 420px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    padding: 2rem 0;
+}
+
+.assisticon i {
+    font-size: 22px;
+    color: #1B82BC;
+    background: transparent;
+    padding: 0 10px 0 0;
+}
+
+.assisticon h5 {
+    font-size: 16px;
+    font-family: Inter;
+    color: #1B82BC;
+    text-transform: lowercase;
+    font-weight: 600;
+}
+
+.assist-heading {
+    width: 100%;
+    height: 280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.assist-heading h1 {
+    font-family: Inter;
+    font-size: 72px;
+    font-weight: bolder;
+    letter-spacing: -2px;
+    color: #000000;
+}
+
+.assist-span p {
+    font-size: 17px;
+    font-family: inter;
+    color: #48494A;
+    line-height: 2;
+}
+
+.assist-span span {
+    font-size: 17px;
+    font-family: inter;
+    color: #000003;
+    font-weight: 700;
+}
+
+.bug-wrapper {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #F1F4F8;
+    padding: 0 3rem;
+}
+
+.bug-content {}
+
+.bug-img img {
+    width: 600px;
+    height: auto;
 }
