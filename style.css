@@ -785,58 +785,54 @@
     padding: 10px 0;
 }
 
-.ides-table {}
-
-.ides-table table {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: space-around;
-    color: #ffffffcc;
-    font-size: 13px;
+.ides-table {
+    font-size: 12px;
     font-family: inter;
+    color: #ffffffcc;
+    border-collapse: collapse;
+    width: 100%;
+    font-weight: 800;
+    margin-bottom: 2rem;
+}
+
+.ides-table th,
+.ides-table td {
+    padding: 20px 26px;
+    text-align: center;
+    border-bottom: 1px solid rgba(255, 255, 255, .12);
+    vertical-align: middle;
+    line-height: 1.8;
+}
+
+
+.ides-table th {
     font-weight: 800;
 
 }
 
-.ides-table table th {
-    padding: 18px 24px;
+.ides-table #td-2 {
+    text-align: left;
 }
 
-.ides-table table tbody {
-    /* border: 2px solid yellow; */
-    display: flex;
-    /* justify-content: space-around; */
+.ides-table #td-1 {
+    background: #131519;
+    border: 1px solid rgba(255, 255, 255, .12);
+    border-top: none;
 }
 
-.ides-table table tbody tr {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-
-}
-
-.ides-table table td {
-    padding: 26px 32px;
-    text-align: center;
-
-}
-
-.ides-table table .check {
+*/ .check {
     display: flex;
     align-items: center;
-    flex-direction: column;
     justify-content: center;
 }
 
-.ides-table #tr1 td {
-    text-align: left;
-    padding: 26px 64px 26px 16px;
-    border-right: 2px solid yellow;
+.check i {
+    /* margin-right: 5px; */
 }
 
-.ides-table #tr-2 {
-    background: #131519;
+.check p {
+    margin: 0;
+
 }
 
 /* -------------------------------------------------------Git-qoute------------------------------------------ */
