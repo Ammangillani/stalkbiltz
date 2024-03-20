@@ -14,17 +14,19 @@
     height: 100vh;
     background-color: #1C1F25;
     overflow-x: hidden;
-    /* position: relative; */
+    position: relative;
 }
 
 .navbar {
     width: 100%;
-    height: 72px;
+    height: 55px;
     display: flex;
     align-items: center;
     justify-content: space-around;
     /* padding: 0 24px; */
-    background-color: transparent;
+    background: hsla(220, 14%, 13%, .9);
+    position: fixed;
+    z-index: 100;
 }
 
 .navsvg {
@@ -105,7 +107,7 @@
     flex-direction: column;
     align-items: start;
     justify-content: space-around;
-    padding: 10px 3.5rem;
+    padding: 4rem 3.5rem;
 
 }
 
@@ -113,6 +115,7 @@
     width: max-content;
     display: flex;
     cursor: pointer;
+    padding: 2rem 0;
 }
 
 
@@ -170,6 +173,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    line-height: 1.4;
 }
 
 .herowrapper h1 {
@@ -186,6 +190,7 @@
     font-weight: 800;
     font-family: extbold;
     color: #fff;
+
 
 }
 
@@ -206,10 +211,8 @@
 
 .btn-wrapper {
     width: 100%;
-    height: 100%;
     display: flex;
     flex-direction: column;
-    /* justify-content: space-around; */
     padding: 3rem 24px;
 }
 
@@ -272,7 +275,7 @@
     align-items: center;
     justify-content: center;
     gap: 12px;
-    padding: 1rem 6rem;
+    padding: 1rem 6rem 4rem;
 }
 
 .btn-container {
@@ -316,9 +319,9 @@
     width: 100%;
     background: rgb(41, 27, 48);
     background: linear-gradient(90deg, rgba(41, 27, 48, 1) 27%, rgba(35, 31, 49, 1) 53%, rgba(24, 40, 50, 1) 85%);
-    height: 500px;
+    height: 80vh;
     position: relative;
-    padding: 2rem;
+    padding: 44px;
 }
 
 .fang-wrapper::before {
@@ -375,7 +378,7 @@
 }
 
 .fang-icons ul {
-    width: 80%;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-around;
