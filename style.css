@@ -702,37 +702,58 @@
     padding: 4rem 0;
 }
 
+.anime-card {
+    display: flex;
+    width: 43vw;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.5s ease;
+}
+
+.anime-card:hover {
+    transform: scale(1.05);
+
+}
+
+.img {
+    position: absolute;
+    right: 20px;
+    height: 250px;
+    width: 250px;
+    transition: transform .8s ease;
+}
+
+.img img {
+    height: 100%;
+}
+
+.anime-card:hover .img {
+    transform: translateX(20%);
+}
+
 .web-card {
-    /* height: 0px; */
-    flex: 1;
+    width: 43vw;
     display: flex;
     align-items: flex-start;
     flex-direction: column;
-    /* justify-content: space-around; */
     background: #fff;
     border-radius: 6px;
-    padding: 32px 36px 0;
     transform: scale(1);
     scale: 1;
     cursor: pointer;
-    transition: ease-in-out 10ms;
-}
-
-.web-card:hover {
-    scale: 1.1;
-
-}
-
-.web-card ::after {
-    content: "";
+    transition: transform 0.3s ease;
 }
 
 .webcard-header {
+    padding: 2rem 0 0 2rem;
     font-size: 30px;
     font-family: Inter;
     line-height: 1.4;
     margin-bottom: 2rem;
 }
+
 
 .webcard-header strong {
     font-family: extbold;
@@ -753,16 +774,34 @@
 }
 
 .webcard-hover {
+    width: 100%;
     display: flex;
     align-items: center;
     padding: 1rem 0;
+    padding-inline: 2rem;
     gap: 18px;
+    transition: all 0.3s ease;
+    color: #00a8db;
+}
+
+.anime-card:hover .webcard-hover {
+    background-color: #00a8db;
+    color: #fff;
+}
+
+.arrow {
+    transition: all 0.3s ease;
+    color: #00a8db;
+}
+
+.anime-card:hover .arrow {
+    transform: translateX(60%);
+    color: #fff;
 }
 
 .webcard-hover span {
     font-size: 16px;
     font-family: Inter;
-    color: #00a8db;
     font-weight: 800;
 }
 
@@ -842,11 +881,7 @@
     justify-content: center;
 }
 
-/* .check i {
-    /* margin-right: 5px; */
-}
-
-*/ .check p {
+.check p {
     margin: 0;
 
 }
@@ -867,4 +902,123 @@
 
 #git-author strong {
     color: #fff;
+}
+
+.dev-container {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    width: 100vw;
+    background: #16181D;
+    position: relative;
+    padding: 4rem 0;
+}
+
+.dev-container::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 840px;
+    height: 440px;
+    background-image: url('./assets/section-bg-cyan.png');
+}
+
+.dev-container h3 {
+    font-size: 40px;
+    font-family: manrope;
+    color: #ffff;
+    text-align: center;
+    font-weight: 500;
+}
+
+.dev-container h3 strong {
+    color: #69F5FF;
+    font-weight: 800;
+}
+
+.dev-wrapper {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4rem 0 3rem 3rem;
+    gap: 100px;
+}
+
+.dev-content {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+}
+
+.dev-content h1 {
+    font-size: 44px;
+    font-family: Manrope;
+    font-weight: 500;
+    color: #ffff;
+}
+
+.dev-img img {
+    position: sticky;
+    width: 100%;
+    z-index: 100;
+}
+
+.dev-span {
+    font-size: 16px;
+    font-family: Inter;
+    color: #ffff;
+    line-height: 2;
+    padding: 2rem 0;
+}
+
+.dev-span strong {
+    font-weight: 700;
+}
+
+.gr-wrapper {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 3rem 3rem 0;
+    gap: 100px;
+}
+
+.gr-content {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+}
+
+.gr-header h1 {
+    font-size: 44px;
+    font-family: Manrope;
+    font-weight: 500;
+    color: #ffff;
+}
+
+.gr-img {
+    width: 692px;
+}
+
+.gr-img img {
+    width: 100%;
+    height: auto;
+}
+
+.gr-span {
+    font-size: 16px;
+    font-family: Inter;
+    color: #ffff;
+    line-height: 2;
+    padding: 2rem 0;
+}
+
+
+.gr-span span {
+    font-weight: 700;
 }
