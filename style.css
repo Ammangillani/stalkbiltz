@@ -113,10 +113,18 @@
 }
 
 .hero-btn {
-    width: max-content;
+    /* width: max-content; */
     display: flex;
     cursor: pointer;
     padding: 2rem 0;
+}
+
+.hero-btn a {
+    width: max-content;
+    display: flex;
+    cursor: pointer;
+    text-decoration: none;
+    /* padding: 2rem 0; */
 }
 
 
@@ -1096,12 +1104,12 @@
     cursor: pointer;
     text-align: left;
     line-height: 1.2;
-    box-shadow: inset 0px 0px 0px 2px #33FFCC;
-    transition: .16s ease-in;
+    border: 2px solid #33FFCC;
+    transition: .30s ease;
 }
 
 .final-btn a {
-    font-family: Inter;
+    font-family: inter;
     font-size: 15px;
     color: #ffff;
     text-decoration: none;
@@ -1115,4 +1123,98 @@
 
 .final-btn:hover a {
     color: #000003;
+}
+
+footer {
+    background: #12151A;
+    padding: 0 3rem;
+}
+
+.footer {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 6rem 0;
+    gap: 80px;
+
+}
+
+.footer-img {
+    display: flex;
+    align-items: flex-start;
+}
+
+.footer-li {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+
+.footer-nav {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    font-family: inter;
+
+
+}
+
+.footer-nav span {
+    font-size: 14px;
+    color: #a1a5b0;
+    padding: 8px 0;
+    cursor: pointer;
+}
+
+.footer-nav h3 {
+    font-size: 14px;
+    color: #ffff;
+    padding: 0 0 30px;
+    font-weight: 800;
+
+}
+
+.footer-nav span:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.footer-links {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 80px;
+    border-bottom: 1px solid #ffffffbd;
+}
+
+.link-a,
+.link-b {
+    display: flex;
+    gap: 20px;
+}
+
+.link-a span {
+    font-size: 14px;
+    font-family: inter;
+    color: #a1a5b0;
+    cursor: pointer;
+}
+
+.link-a span:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.footer-cc {
+    display: flex;
+    align-items: baseline;
+    justify-content: flex-end;
+    gap: 40px;
+    font-size: 14px;
+    font-family: inter;
+    color: #a1a5b0;
+    padding: 32px 0;
+
 }
