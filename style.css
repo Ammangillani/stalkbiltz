@@ -1162,7 +1162,7 @@ footer {
 }
 
 .footer-nav span {
-    font-size: 14px;
+    font-size: 13px;
     color: #a1a5b0;
     padding: 8px 0;
     cursor: pointer;
@@ -1186,7 +1186,7 @@ footer {
     align-items: center;
     justify-content: space-between;
     min-height: 80px;
-    border-bottom: 1px solid #ffffffbd;
+    border-bottom: 1px solid #ffffff0d;
 }
 
 .link-a,
@@ -1196,7 +1196,7 @@ footer {
 }
 
 .link-a span {
-    font-size: 14px;
+    font-size: 12px;
     font-family: inter;
     color: #a1a5b0;
     cursor: pointer;
@@ -1212,9 +1212,18 @@ footer {
     align-items: baseline;
     justify-content: flex-end;
     gap: 40px;
-    font-size: 14px;
-    font-family: inter;
-    color: #a1a5b0;
+
     padding: 32px 0;
 
+}
+
+.footer-cc span {
+    font-size: 11px;
+    font-family: inter;
+    color: #a1a5b0;
+}
+
+.footer-cc p {
+    color: #ffffff4d;
+    font-size: 9px;
 }
