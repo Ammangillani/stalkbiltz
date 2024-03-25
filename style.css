@@ -47,6 +47,14 @@
 
 }
 
+.hemberg {
+    display: none;
+}
+
+#spanclose {
+    display: none;
+}
+
 .navanchors ul {
     display: flex;
     align-items: center;
@@ -1226,4 +1234,109 @@ footer {
 .footer-cc p {
     color: #ffffff4d;
     font-size: 9px;
+}
+
+/* ----------------------------------------media Queries------------------------------------ */
+
+@media only screen and (max-width: 768px) {
+
+    .navbar {
+        justify-content: flex-start;
+        padding: 0 24px;
+
+    }
+
+    .navsvg {
+        display: flex;
+        align-items: center;
+        width: 20%;
+        height: 72px;
+    }
+
+    .navsvg svg {
+        width: 108px;
+        height: 32px;
+    }
+
+    .navanchors {
+        width: 40%;
+
+    }
+
+    .navanchors {
+        position: fixed;
+        top: 0;
+        right: -1000px;
+        width: 70%;
+        height: 100%;
+        background-color: #212732;
+        transition: right 0.3s ease;
+        z-index: 9999;
+    }
+
+    .hemberg {
+        display: block;
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        z-index: 99999;
+    }
+
+    #spanclose {
+        display: block;
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        z-index: 99999;
+    }
+
+    .navanchors ul {
+        flex-direction: column;
+        align-items: flex-start;
+        padding-top: 50px;
+    }
+
+    .navanchors a {
+        padding: 10px 20px;
+    }
+
+    .navbutton {
+        display: none;
+    }
+
+    .hero-btn {
+        /* width: max-content; */
+        display: flex;
+        cursor: pointer;
+        padding: 2rem 0;
+    }
+
+    .hero-btn a {
+        width: max-content;
+        display: flex;
+        cursor: pointer;
+        text-decoration: none;
+        /* padding: 2rem 0; */
+    }
+
+
+    .hero-btn #assh {
+        width: 280px;
+        display: flex;
+        /* align-items: center; */
+        padding: 12px 20px;
+
+    }
+
+    .hero-btn:hover #assh {
+        background: linear-gradient(#441C7B, #bb19f7);
+        box-shadow: inset 0 0 1px 0px #f9f9f917,
+            inset 0 0 0 1px rgba(255, 255, 255, 0.3);
+    }
+
+
+    .hero-btn #learnmore {
+        display: none;
+    }
+
 }
