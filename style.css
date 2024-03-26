@@ -1367,22 +1367,6 @@ footer {
         justify-content: space-around;
     }
 
-    .fang-header h3 {
-        font-size: 32px;
-        font-family: Manrope;
-        text-align: center;
-        color: #ffff;
-        font-weight: 200;
-    }
-
-    .fang-header strong {
-        font-weight: 800;
-    }
-
-    .fang-icons {
-        padding: 1rem 0 0 0;
-    }
-
     .fang-icons ul {
         width: 100%;
         display: flex;
