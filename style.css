@@ -1248,6 +1248,13 @@ footer {
         padding: 0 14px;
     }
 
+    .navsvg {
+        display: flex;
+        align-items: center;
+        width: 40%;
+        height: 72px;
+    }
+
     .navanchors {
         position: fixed;
         top: 0;
@@ -1320,7 +1327,7 @@ footer {
     }
 
     .wrapper-navigation {
-        justify-content: flex-start;
+        /* justify-content: flex-start; */
         width: 100%;
         padding: 2rem 0;
         overflow-x: scroll;
