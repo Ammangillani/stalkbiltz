@@ -1,9 +1,9 @@
 let close = document.getElementById("close");
 let open = document.getElementById("open");
-let nav = document.querySelector(".navanchors");
+let nav = document.querySelector(".nav-content");
 
 function openmenu() {
-  nav.style.right = "0";
+  nav.style.right = "20px";
 }
 function closemenu() {
   nav.style.right = "-1000px";
