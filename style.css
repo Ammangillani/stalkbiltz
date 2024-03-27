@@ -1357,12 +1357,12 @@ footer {
     .wrapper-navigation {
         width: 100%;
         padding: 2rem 0 2rem 2rem;
-        overflow-x: auto;
+        overflow-x: scroll;
         justify-content: flex-start;
     }
 
     .wrapper-navigation ul {
-        width: 80%;
+        width: 800px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -1373,7 +1373,7 @@ footer {
         font-weight: 800;
         cursor: pointer;
         gap: 10px;
-        padding-left: 14rem;
+        /* padding-left: 14rem; */
 
     }
 
