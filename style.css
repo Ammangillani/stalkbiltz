@@ -1269,6 +1269,7 @@ footer {
         justify-content: center;
         align-items: center;
         z-index: 999;
+        right: -1000px;
         gap: 20px;
         width: calc(100% - 30px);
         height: 420px;
@@ -1292,15 +1293,13 @@ footer {
     }
 
     #spanclose {
-        display: block;
-        position: absolute;
-        top: 20px;
-        right: 20px;
-        z-index: 99999;
+        display: none;
+
     }
 
     #spanclose i {
-        color: red;
+        color: #FFF;
+        font-size: 22px;
     }
 
     .navanchors ul {
@@ -1315,12 +1314,12 @@ footer {
     }
 
     .navbutton {
+        width: 100%;
         justify-content: center;
     }
 
     .navbutton button {
-        padding: 10px 40px;
-        line-height: 1.2;
+        flex: 1;
     }
 
 

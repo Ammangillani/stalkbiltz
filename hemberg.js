@@ -4,10 +4,10 @@ let nav = document.querySelector(".nav-content");
 
 function openmenu() {
   nav.style.right = "20px";
+  open.style.display = "none";
+  close.style.display = "block";
 }
 function closemenu() {
   nav.style.right = "-1000px";
 }
-
-open.addEventListener("click", openmenu);
 close.addEventListener("click", closemenu);
