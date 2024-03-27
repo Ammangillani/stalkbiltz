@@ -1646,4 +1646,12 @@ footer {
         width: 339px;
     }
 
+    .footer {
+        flex-direction: column;
+    }
+
+    .footer-li {
+        gap: 20px;
+        flex-direction: column;
+    }
 }
