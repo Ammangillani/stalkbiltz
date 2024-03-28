@@ -1406,6 +1406,7 @@ footer {
         list-style: none;
         flex-wrap: wrap;
         gap: 30px;
+        z-index: 999;
     }
 
 
