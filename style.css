@@ -1109,9 +1109,11 @@
 }
 
 .final-btn {
+    width: 280px;
+    height: 80px;
     display: flex;
     align-items: center;
-    padding: 24px 64px;
+    justify-content: center;
     font-weight: 700;
     gap: 16px;
     border-radius: 8px;
@@ -1130,7 +1132,6 @@
 }
 
 .final-btn:hover {
-    /* background: #69F5FF; */
     box-shadow: inset 300px 0px 0px 8px #33FFCC;
     color: #000003;
 }
@@ -1663,6 +1664,16 @@ footer {
 
     .final-wrapper {
         height: 60vh;
+    }
+
+    .final-header h3 {
+        font-size: 22px;
+    }
+
+    .final-btn {
+        width: auto;
+        height: auto;
+        padding: 16px 24px;
     }
 
     footer {
